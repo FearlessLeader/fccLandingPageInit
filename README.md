@@ -1,4 +1,4 @@
-This is my freeCodeCamp Product Landing Page. This is number three in the series of five (3/5) projects for the freeCodeCamp Responsive Web Design certification. The student is requird to successfully complete the following user stories:
+This is my freeCodeCamp Product Landing Page. This is number three in the series of five (3/5) projects for the freeCodeCamp Responsive Web Design certification. To successfully completed the assignment, the project must implement the following user stories:
 
 User Stories - Product Landing Page
 
