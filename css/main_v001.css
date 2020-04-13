@@ -1,0 +1,334 @@
+/**
+This is the main css file:
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', Montserrat, Lato, "Noto Sans", sans-serif;
+    color: #000;
+
+    /** Taken from W3Schools.com Hero Image **
+*  https://www.w3schools.com/cssref/pr_background-image.asp
+**/
+
+    /*background-image: url("../backgrounds/samurai-3791918.png"); !* The image used *!*/
+    /*!*background-color: #cccccc; !* Used if the image is unavailable *!*!*/
+    /*height: auto; !* You must set a specified height *!*/
+    /*background-position: center; !* Center the image *!*/
+    /*background-repeat: no-repeat; !* Do not repeat the image *!*/
+    /*background-size: contain; !* Resize the background image to cover the entire container *!*/
+
+    background-color: #cccccc;
+}
+
+.page-wrapper {
+    border: solid 2px red;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    /*background-color: aquamarine;*/
+    border: solid 3px silver;
+    z-index: 2000;
+}
+
+#image-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+    /*border:           solid 1px yellow;*/
+}
+
+#header-img {
+    height: 150px;
+    /*width:            300px;*/
+    display: flex;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    /*background-color:  lightgreen;*/
+    /*border:            dashed 2px green;*/
+}
+
+#header-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.50em;
+    font-weight: 300;
+    width: auto;
+    max-height: 150px;
+    padding: 5px 5px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color: white;
+    /*border:           solid 1px purple;*/
+}
+
+#nav-bar {
+    height: 100%;
+    margin-right: 2px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*border:          solid 1px purple;*/
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 300;
+    font-size: 1.75em;
+    height: 100%;
+    width: 125px;
+    padding: 0 2px;
+    /*border:          solid 1px orange;*/
+}
+
+li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    /*border:         solid 1px red;*/
+}
+
+/*@media (max-width: 895px)  {*/
+/*#nav-bar ul {*/
+/*display:         flex;*/
+/*flex-direction:  column;*/
+/*align-items:     flex-start;*/
+/*width:           35vw;*/
+/*border:          solid 1px yellowgreen;*/
+/*}*/
+
+/*#nav-bar ul li {*/
+/*!*display:         flex;*!*/
+/*!*align-items:     left;*!*/
+/*!*justify-content: flex-start;*!*/
+/*font-family:      'Nanum Brush Script', cursive;*/
+/*font-weight:      300;*/
+/*font-size:        1.75em;*/
+/*height:           30px;*/
+/*width:            125px;*/
+/*padding:          0 2px;*/
+/*background-color: white;*/
+/*border:           solid 1px orange;*/
+/*z-index:          3000;*/
+/*}*/
+
+/*#nav-bar ul li a {*/
+/*display:         block;*/
+/*!*width:           100%;*!*/
+/*width:           125px;*/
+/*text-decoration: none;*/
+/*color:           black;*/
+/*padding:         0;*/
+/*text-align:      center;*/
+/*!*border:         solid 1px red;*!*/
+/*}*/
+/*}*/
+
+@media (max-width: 895px) {
+    #header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 195px;
+    }
+
+    #image-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /*border:           solid 1px yellow;*/
+    }
+
+    #nav-bar ul {
+        display: flex;
+        margin: 5px 0 0 0;
+        height: 40px;
+        width: 100%;
+        border: solid 1px yellowgreen;
+    }
+
+    #nav-bar ul li {
+        font-family: 'Nanum Brush Script', cursive;
+        font-weight: 900;
+        font-size: 1.60em;
+        height: 90%;
+        width: 105px;
+        padding: 0 2px;
+        background-color: goldenrod;
+        border: solid 1px darkorange;
+        z-index: 3000;
+    }
+
+    #nav-bar ul li a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #333333;
+        padding: 0;
+        text-align: center;
+        /*border:         solid 1px red;*/
+    }
+}
+
+main {
+    margin: 0 2.5em;
+    opacity: 0.95;
+}
+
+h1.page-heading {
+    /*font-family:   'Nanum Brush Script', cursive;*/
+    /*font-family:   'Nanum Gothic', sans-serif;*/
+    font-family: Montserrat, "Noto Sans", Lato, sans-serif;
+    font-size: 2.25em;
+    text-align: center;
+    margin: 5.50em 0 0 0;
+}
+
+h3.page-sub-heading {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 2.00em;
+    text-align: center;
+    margin: 0.40em 0 0 0;
+    /*margin-top:    0.50em;*/
+}
+
+.samurai-image-left {
+    position: absolute;
+    top: 2.75em;
+    left: 0;
+    width: 125px;
+    z-index: 1;
+    /*background-color:    coral;*/
+}
+
+.samurai-image-right {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 125px;
+    z-index: 1;
+    /*background-color:    coral;*/
+}
+
+.section-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.50em;
+    margin: -1.00em 0 -1.25em 0;
+}
+
+section::before {
+    display: block;
+    content: " ";
+    margin-top: -125px;
+    margin-bottom: -125px;
+    height: 250px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 895px) {
+    section::before {
+        display: block;
+        content: " ";
+        margin-top: -165px;
+        margin-bottom: -125px;
+        height: 290px;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    h1.page-heading {
+        margin: 6.50em 0 0 0;
+        background-color: yellow;
+        border: solid 3px darkblue;
+    }
+
+    .section-container {
+        margin: -1.00em 0;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    section::before {
+        display: block;
+        content: " ";
+        margin-top: -165px;
+        margin-bottom: -125px;
+        height: 300px;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    h1.page-heading {
+        margin: 6.50em 0 0 0;
+        background-color: yellow;
+        border: solid 3px darkblue;
+    }
+
+    .section-container {
+        margin: -1.00em 0;
+    }
+
+    .section-container a {
+        display: block;
+        width: 50px;
+        height: 100%;
+        margin: 0 10px 0 10px;
+        align-self: center;
+        background-color: white;
+        border: dashed 1px yellow;
+        z-index: 2;
+    }
+}
+
+.up-button {
+    max-width: 36px;
+}
+
+.section-container a {
+    align-self: center;
+    border: dashed 1px green;
+}
+
+#hero {
+    /*display:        flex;*/
+    /*flex-direction: column;*/
+    /*align-items:    center;*/
+    /*justify-content: center;*/
+    /*text-align:     center;*/
+    /*height:         200px;*/
+    /*margin-top:     50px;*/
+}
+
+footer {
+    background-color: blue;
+}

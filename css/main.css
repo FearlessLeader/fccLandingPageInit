@@ -1,0 +1,314 @@
+/**
+This is the main css file:
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Nanum Gothic', Montserrat, Lato, "Noto Sans", sans-serif;
+    color: #000;
+
+    /** Taken from W3Schools.com Hero Image **
+*  https://www.w3schools.com/cssref/pr_background-image.asp
+**/
+
+    /*background-image: url("../backgrounds/samurai-3791918.png"); !* The image used *!*/
+    /*!*background-color: #cccccc; !* Used if the image is unavailable *!*!*/
+    /*height: auto; !* You must set a specified height *!*/
+    /*background-position: center; !* Center the image *!*/
+    /*background-repeat: no-repeat; !* Do not repeat the image *!*/
+    /*background-size: contain; !* Resize the background image to cover the entire container *!*/
+
+    background-color: #F9F9F9;
+}
+
+.page-wrapper {
+    min-height: 100%;
+    /* Equal to height of footer
+     * But also accounting for potential bottom-margin of last-child */
+    margin-bottom: -50px;
+    border: solid 2px red;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border: solid 2px silver;
+    z-index: 2000;
+}
+
+#image-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+    /*border:           solid 1px yellow;*/
+}
+
+#header-img {
+    display: flex;
+    height: 150px;
+    /*width:            300px;*/
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    /*background-color:  lightgreen;*/
+    /*border:            dashed 2px green;*/
+}
+
+#header-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.50em;
+    font-weight: 300;
+    width: auto;
+    max-height: 150px;
+    padding: 5px 5px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color: white;
+    /*border:           solid 1px purple;*/
+}
+
+#nav-bar {
+    height: auto;
+    margin-right: 2px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    /*border:          solid 1px purple;*/
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 300;
+    font-size: 1.75em;
+    height: 100%;
+    width: 125px;
+    padding: 0 2px;
+    /*border:          solid 1px orange;*/
+}
+
+li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    /*border:         solid 1px red;*/
+}
+
+main {
+    margin: 150px 2.50em 0 2.50em;
+    opacity: 0.95;
+}
+
+h1.page-heading {
+    /*font-family:   'Nanum Brush Script', cursive;*/
+    /*font-family:   'Nanum Gothic', sans-serif;*/
+    font-family: Montserrat, "Noto Sans", Lato, sans-serif;
+    font-size: 2.25em;
+    text-align: center;
+    margin: 195px 0 0 0;
+}
+
+h3.page-sub-heading {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 2.00em;
+    text-align: center;
+    margin: 0.40em 0 1.00em 0;
+}
+
+.samurai-image-left {
+    position: absolute;
+    top: 2.75em;
+    left: 0;
+    width: 125px;
+    z-index: 1;
+    /*background-color:    coral;*/
+}
+
+.samurai-image-right {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 125px;
+    z-index: 1;
+    /*background-color:    coral;*/
+}
+
+/*#instructors {*/
+/*display:            block;*/
+/*width:              auto;*/
+/*}*/
+
+div.section-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.50em;
+    padding: 0.750em 0 0 0;
+}
+
+div.section-container h2 {
+    margin: 0;
+}
+
+div.section-container a {
+    align-self: center;
+    /*border:         dashed 1px green;*/
+}
+
+section::before {
+    display: block;
+    content: " ";
+    margin-top: -150px;
+    margin-bottom: 0;
+    height: 150px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.up-button {
+    width: 30px;
+}
+
+/*.video-wrapper {*/
+/*border:             solid 1px green;*/
+/*}*/
+
+#video {
+    display: block;
+    margin: auto;
+    max-width: 620px;
+    width: 100%;
+}
+
+/* ================================
+ * End Base CSS Configuration
+ * ================================ */
+@media (max-width: 895px) {
+    #header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 195px;
+    }
+
+    #image-wrapper {
+        justify-content: center;
+        width: 100%;
+        /*border:           solid 1px yellow;*/
+    }
+
+    #nav-bar ul {
+        margin: 5px 0 0 0;
+        height: 40px;
+        width: 100%;
+        /*border:          solid 1px yellowgreen;*/
+    }
+
+    #nav-bar ul li {
+        font-weight: 500;
+        font-size: 1.60em;
+        height: 90%;
+        width: 105px;
+        background-color: transparent;
+        /*background-color: goldenrod;*/
+        /*border:           solid 1px darkorange;*/
+        /*z-index:          auto;*/
+    }
+
+    #nav-bar ul li a {
+        padding: 0;
+        /*border:         solid 1px red;*/
+    }
+
+    main {
+        margin-top: 195px;
+    }
+
+    section::before {
+        margin-top: -195px;
+        margin-bottom: 0;
+        height: 195px;
+    }
+
+    h1.page-heading {
+        margin: 235px 0 0 0;
+        /*background-color:  yellow;*/
+        /*border:            solid 3px darkblue;*/
+    }
+
+    div.section-container {
+        /*background-color: white;*/
+        /*border:           solid 1px yellow;*/
+    }
+}
+
+@media (max-width: 585px) {
+    main {
+        margin: 195px 1.75em 0 1.75em;
+    }
+
+    div.section-container {
+        /*border:            solid 1px orange;*/
+    }
+
+    div.section-container h2 {
+        /*border:              solid 2px green;*/
+    }
+
+    div.section-container a {
+        /*padding-right:       50px;*/
+        /*background-color:    white;*/
+        /*border:              dashed 3px yellow;*/
+    }
+}
+
+#hero {
+    /*display:        flex;*/
+    /*flex-direction: column;*/
+    /*align-items:    center;*/
+    /*justify-content: center;*/
+    /*text-align:     center;*/
+    /*height:         200px;*/
+    /*margin-top:     50px;*/
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 0.1250em;
+    margin-top: 3.00em;
+    padding: 1.00em 0;
+    border-top: solid 1px silver;
+}
+
+.footer, .push {
+    height: 50px;
+    background-color: #EFEFEF;
+}
